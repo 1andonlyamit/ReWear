@@ -1,63 +1,11 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { featuredItems } from '../../data/landingData';
 
 // Featured Items Carousel Component
 export default function FeaturedItemsCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   
-  const featuredItems = [
-    {
-      id: 1,
-      title: "Vintage Denim Jacket",
-      category: "Outerwear",
-      size: "M",
-      condition: "Excellent",
-      points: 25,
-      image: "🧥",
-      user: "Sarah M."
-    },
-    {
-      id: 2,
-      title: "Floral Summer Dress",
-      category: "Dresses",
-      size: "S",
-      condition: "Like New",
-      points: 30,
-      image: "👗",
-      user: "Emma K."
-    },
-    {
-      id: 3,
-      title: "Designer Sneakers",
-      category: "Footwear",
-      size: "8",
-      condition: "Good",
-      points: 35,
-      image: "👟",
-      user: "Alex J."
-    },
-    {
-      id: 4,
-      title: "Wool Blend Sweater",
-      category: "Knitwear",
-      size: "L",
-      condition: "Excellent",
-      points: 20,
-      image: "🧶",
-      user: "Maya R."
-    },
-    {
-      id: 5,
-      title: "Leather Handbag",
-      category: "Accessories",
-      size: "One Size",
-      condition: "Very Good",
-      points: 40,
-      image: "👜",
-      user: "Lisa P."
-    }
-  ];
-
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % Math.ceil(featuredItems.length / 3));
   };

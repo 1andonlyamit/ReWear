@@ -1,14 +1,9 @@
 import React from 'react';
-import { Recycle, Users, Heart, Star } from 'lucide-react';
+// import { Recycle, Users, Heart, Star } from 'lucide-react';
+import { metrics } from '../../data/landingData';
 
 // Impact Metrics Component
 export default function ImpactMetrics() {
-  const metrics = [
-    { value: "2,500+", label: "Items Exchanged", icon: Recycle },
-    { value: "1,200+", label: "Active Users", icon: Users },
-    { value: "45%", label: "Waste Reduced", icon: Heart },
-    { value: "98%", label: "Satisfaction Rate", icon: Star }
-  ];
 
   return (
     <section className="py-20 bg-slate-50">

@@ -1,30 +1,8 @@
 // Testimonials Component
 import { Star } from 'lucide-react';
-export default function TestimonialsSection() {
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      role: "Sustainable Fashion Enthusiast",
-      content: "ReWear has completely changed how I think about my wardrobe. I've found amazing pieces and given my clothes a second life!",
-      avatar: "👩‍🦰",
-      rating: 5
-    },
-    {
-      name: "Mike Chen",
-      role: "Eco-Conscious Student",
-      content: "The point system is genius! I've been able to refresh my wardrobe without spending money and help the environment.",
-      avatar: "👨‍🎓",
-      rating: 5
-    },
-    {
-      name: "Emily Rodriguez",
-      role: "Fashion Blogger",
-      content: "As someone who writes about sustainable fashion, ReWear is exactly what the industry needs. Simple, effective, and impactful.",
-      avatar: "👩‍💻",
-      rating: 5
-    }
-  ];
+import { testimonials } from '../../data/landingData';
 
+export default function TestimonialsSection() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
