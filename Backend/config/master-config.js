@@ -1,9 +1,9 @@
-let port = process.env.PORT || ""
-let database = process.env.DATABASE || ""
-let database_user = process.env.DATABASE_USER || ""
-let database_password = process.env.DATABASE_PASSWORD || ""
-let database_host = process.env.DATABASE_HOST || ""
-let database_port = process.env.DATABASE_PORT || ""
+let port = process.env.PORT || "6969"
+let database = process.env.DATABASE || "re-wear"
+let database_user = process.env.DATABASE_USER || "root"
+let database_password = process.env.DATABASE_PASSWORD || "7073"
+let database_host = process.env.DATABASE_HOST || "127.0.0.1"
+let database_port = process.env.DATABASE_PORT || "3306"
 
 module.exports = {
     app_port: port,
@@ -13,5 +13,5 @@ module.exports = {
         password: database_password,
         database: database,
         port: database_port
-    },
+    },
 }
