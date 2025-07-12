@@ -1,5 +1,5 @@
 let port = process.env.PORT || "6969"
-let database = process.env.DATABASE || "re-wear"
+let database = process.env.DATABASE || "rewear"
 let database_user = process.env.DATABASE_USER || "root"
 let database_password = process.env.DATABASE_PASSWORD || "7073"
 let database_host = process.env.DATABASE_HOST || "127.0.0.1"
